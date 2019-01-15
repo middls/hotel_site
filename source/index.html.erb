@@ -1,23 +1,106 @@
 ---
-title: Welcome to Middleman
+title: Hotel | SPA
+layout: layout
 ---
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 340" class="middleman-logo" aria-labelledby="middleman-logo__title" role="img">
-  <title id="middleman-logo__title">Middleman</title>
-  <path class="middleman-logo__top-left-bar" fill-opacity=".45" d="M0 40L200 0v30L0 60z"/>
-  <path class="middleman-logo__top-right-bar" fill="#fff" d="M200 0l200 40v20L200 30z"/>
-  <path class="middleman-logo__left-m" fill-opacity=".45" d="M0 78v184l45 5V152l45 83 47-83v129l53 7V52l-57 8-43 83-43-70z"/>
-  <path class="middleman-logo__right-m" fill="#fff" d="M400 78v184l-45 5V152l-45 83-47-83v129l-53 7V52l57 8 43 83 43-70z"/>
-  <path class="middleman-logo__bottom-left-bar" fill-opacity=".45" d="M0 300l200 40v-30L0 280z"/>
-  <path class="middleman-logo__bottom-right-bar" fill="#fff" d="M200 340l200-40v-20l-200 30z"/>
-</svg>
+<div id="main">
+	<header class="masthead cd-header">
+		<button class="menu-toggle"></button>
+		<nav class="burger-menu">
+			<ul class="menu">
+				<li class="burger-menu-item" data-text="Home">Home</li>
+				<li class="burger-menu-item" data-text="Projects">Projects</li>
+				<li class="burger-menu-item" data-text="About">About</li>
+				<li class="burger-menu-item" data-text="Contact">Contact</li>
+			</ul>
+		</nav>
+		<nav class="masthead__vital cd-header__nav js-cd-header__nav">
+			<div class="container container-header">
+				<div class="row">
+					<div class="col-xs-6 col-md-2 col-xl-1 menu__header_logo__root">
+						<a href="#" class="menu__header_logo">
+							<img src="">
+						</a>
+					</div>
+					<div class="col-md-8 col-xl-10 menu__header_vital__root">
+						<ul class="menu__header_vital">
+							<li class="menu-item">
+								<a href="">Portfolio</a>
+							</li>
+							<li class="menu-item">
+								<a href="">About</a>
+							</li>
+							<li class="menu-item">
+								<a href="">Contact</a>
+							</li>
+						</ul>
+					</div>
 
-<h1>
-  Middleman is Running
-</h1>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-<%= link_to(
-  "Read Documentation",
-  "https://middlemanapp.com/basics/templating_language/",
-  target: "_blank"
-) %>
+	<div class="site-wrap">
+		<div class="content-wrap">
+
+			<!-- HeroSlider -->
+			<section class="cd-hero js-cd-hero js-cd-autoplay">
+				<ul class="cd-hero__slider">
+					<!-- first slide -->
+					<li class="cd-hero__slide cd-hero__slide--selected js-cd-slide">
+						<div class="cd-hero__content cd-hero__content--full-width cd-hero__content--img ">
+							<img src="images/main_image-green.jpg" alt="tech 2">
+						</div> <!-- .cd-hero__content -->
+
+						<div class="cd-hero__content cd-hero__content--full-width">
+
+						</div> <!-- .cd-hero__content -->
+					</li>
+					<!-- second slide -->
+					<li class="cd-hero__slide js-cd-slide">
+
+						<div class="cd-hero__content cd-hero__content--half-width">
+
+						</div> <!-- .cd-hero__content -->
+
+						<div class="cd-hero__content cd-hero__content--full-width cd-hero__content--img">
+							<img src="images/main_image_hall.jpg" alt="tech 1">
+						</div> <!-- .cd-hero__content -->
+					</li>
+					<!-- third slider -->
+					<li class="cd-hero__slide js-cd-slide">
+						<div class="cd-hero__content cd-hero__content--full-width cd-hero__content--img ">
+							<img src="images/main_image-bedroom.jpg" alt="tech 2">
+						</div> <!-- .cd-hero__content -->
+
+						<div class="cd-hero__content cd-hero__content--half-width">
+
+						</div> <!-- .cd-hero__content -->
+					</li>
+
+					<!-- <li class="cd-hero__slide cd-hero__slide--video js-cd-slide">
+						<div class="cd-hero__content cd-hero__content--full-width">
+
+						</div>
+
+						<div class="cd-hero__content cd-hero__content--bg-video js-cd-bg-video" data-video="">
+
+						</div>
+					</li> -->
+				</ul> <!-- .cd-hero__slider -->
+				<div class="cd-hero__nav js-cd-nav">
+					<nav>
+						<span class="cd-hero__marker cd-hero__marker--item-1 js-cd-marker"></span>
+						<ul>
+							<li class="cd-selected"><a href="#0">Intro</a></li>
+							<li><a href="#0">Tech 1</a></li>
+							<li><a href="#0">Tech 2</a></li>
+<!-- 							<li><a href="#0">Video</a></li> -->
+						</ul>
+					</nav>
+				</div> <!-- .cd-hero__nav -->
+			</section> <!-- .cd-hero -->
+		</div>
+	</div>
+</div>
