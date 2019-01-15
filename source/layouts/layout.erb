@@ -1,16 +1,23 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="ru-Ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
+    <title><%= current_page.data.title || "Hotel | SPA" %></title>
+    <%= stylesheet_link_tag "css/bootstrap.min.css" %>
+    <%= stylesheet_link_tag "css/app" %>
+    <%= stylesheet_link_tag "css/hero-slider"%>
+    <%= stylesheet_link_tag "css/reset"%>
   </head>
   <body>
     <%= yield %>
+    <%= javascript_include_tag "jquery-3.3.1.slim.min.js" %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <%= javascript_include_tag "bootstrap.min.js" %>
+    <%= javascript_include_tag "hero-slider" %>
+    <%= javascript_include_tag "site" %>
   </body>
 </html>
