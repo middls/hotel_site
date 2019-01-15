@@ -145,3 +145,13 @@
     height: 16px;
     background-image: url('images/icon-arrow-right.png');
 }
+
+.gallery-image__item:hover img {
+    transform: scale(1.1);
+}
+.gallery-image__item img {
+    transition: all 0.5s linear;
+}
+.flex-a-c {
+   justify-content: flex-end;
+}
