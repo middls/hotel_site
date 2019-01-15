@@ -1,45 +1,35 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Lusitana);
-/* line 1, ../sass/pages/main-page.scss */
 body {
   background-color: #fff;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   text-align: center; }
 
-/* line 1, ../sass/componets/header-menu.scss */
 .container-header {
   margin: 0;
   padding: 0 15px; }
 
 @media (min-width: 1200px) {
-  /* line 9, ../sass/componets/header-menu.scss */
   .container {
     max-width: 100%; } }
-/* line 15, ../sass/componets/header-menu.scss */
 .menu__header_vital {
   float: left; }
 
-/* line 21, ../sass/componets/header-menu.scss */
 .cd-header__nav a {
   font-size: 18px;
   text-transform: uppercase; }
 
-/* line 27, ../sass/componets/header-menu.scss */
 .menu__header_logo__root {
   padding-top: 20px; }
 
-/* line 31, ../sass/componets/header-menu.scss */
 .menu__header_vital__root {
   min-height: 100px;
   padding: 15px 20px; }
 
-/* line 36, ../sass/componets/header-menu.scss */
 .menu__header_vital a {
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out; }
 
-/* line 41, ../sass/componets/header-menu.scss */
 .menu__header_vital a:before {
   position: absolute;
   top: 50%;
@@ -47,54 +37,67 @@ body {
   width: 10px;
   height: 2px;
   content: '';
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-color: #fff;
   opacity: 0; }
 
-/* line 67, ../sass/componets/header-menu.scss */
 .menu__header_vital a:hover:before {
   opacity: 1; }
 
-/* line 70, ../sass/componets/header-menu.scss */
 .text {
   position: relative; }
 
-/* line 1, ../sass/componets/base.scss */
+.flex-ac {
+  margin-left: 60px; }
+
+.subheading {
+  position: relative;
+  font-size: 28px; }
+
+.subheading::before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: -4em;
+  width: 75px;
+  height: 1px;
+  background-color: #fff; }
+
+.subheading--h1 {
+  font-size: 85px;
+  color: #fff;
+  font-weight: 500;
+  transform: translateX(0);
+  letter-spacing: 1.5px; }
+
 a {
   cursor: pointer;
   text-decoration: none; }
 
-/* line 6, ../sass/componets/base.scss */
 a:hover {
   text-decoration: none; }
 
-/* line 18, ../sass/componets/burger-menu.scss */
 .menu {
   list-style: none;
   margin: 0;
   padding: 0; }
-  /* line 22, ../sass/componets/burger-menu.scss */
   .menu .burger-menu-item {
     cursor: pointer;
     padding: 6px 20px;
     font-size: 48px; }
 
-/* line 29, ../sass/componets/burger-menu.scss */
 .menu-toggle {
   opacity: 1;
   background-color: transparent;
   position: fixed;
   z-index: 2;
-  top: 40px;
-  right: 15px;
+  top: 35px;
+  right: 30px;
   border: none;
   width: 36px;
   height: 20px;
   outline: none;
-  -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out; }
-  /* line 41, ../sass/componets/burger-menu.scss */
   .menu-toggle:before {
     content: "";
     position: absolute;
@@ -105,11 +108,8 @@ a:hover {
     margin: auto;
     right: auto;
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(20%, white), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, white), color-stop(60%, white), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, white), to(white));
     background: linear-gradient(to bottom, white, white 20%, transparent 20%, transparent 40%, white 40%, white 60%, transparent 60%, transparent 80%, white 80%, white 100%);
-    -webkit-transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out;
     transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out; }
-  /* line 57, ../sass/componets/burger-menu.scss */
   .menu-toggle:after {
     opacity: 0;
     content: '×';
@@ -120,34 +120,21 @@ a:hover {
     font-family: Arial, sans-serif;
     font-size: 76px;
     line-height: 0;
-    -webkit-transition: opacity 0.4s ease-out;
     transition: opacity 0.4s ease-out; }
-  /* line 69, ../sass/componets/burger-menu.scss */
   .menu-toggle:active {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px); }
-  /* line 72, ../sass/componets/burger-menu.scss */
+    transform: translateY(2px); }
   .menu-toggle:hover {
-    -webkit-transform: translate3d(0, 0, 0) scaleX(1);
-            transform: translate3d(0, 0, 0) scaleX(1); }
-  /* line 75, ../sass/componets/burger-menu.scss */
+    transform: translate3d(0, 0, 0) scaleX(1); }
   .open .menu-toggle {
     opacity: 1; }
-    /* line 77, ../sass/componets/burger-menu.scss */
     .open .menu-toggle:before {
       opacity: 0;
       width: 0; }
-    /* line 81, ../sass/componets/burger-menu.scss */
     .open .menu-toggle:after {
       opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0) rotate(360deg);
-              transform: translate3d(0, 0, 0) rotate(360deg);
-      -webkit-transition: opacity 0.4s 1s ease-out, -webkit-transform 0.4s 1s ease-out;
-      transition: opacity 0.4s 1s ease-out, -webkit-transform 0.4s 1s ease-out;
-      transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out;
-      transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out, -webkit-transform 0.4s 1s ease-out; }
+      transform: translate3d(0, 0, 0) rotate(360deg);
+      transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out; }
 
-/* line 91, ../sass/componets/burger-menu.scss */
 .burger-menu {
   z-index: 1;
   position: fixed;
@@ -155,12 +142,9 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
   overflow: hidden; }
-  /* line 100, ../sass/componets/burger-menu.scss */
   .burger-menu:before {
     content: '';
     position: absolute;
@@ -174,36 +158,25 @@ a:hover {
     height: 0;
     padding-bottom: 100%;
     border-radius: 100%;
-    -webkit-transform: scale(0.04), translateY(9999px);
-            transform: scale(0.04), translateY(9999px);
+    transform: scale(0.04), translateY(9999px);
     overflow: hidden; }
-  /* line 111, ../sass/componets/burger-menu.scss */
   .open .burger-menu {
     top: 0; }
-    /* line 113, ../sass/componets/burger-menu.scss */
     .open .burger-menu:before {
-      -webkit-animation: menu-animation 0.8s ease-out forwards;
-              animation: menu-animation 0.8s ease-out forwards; }
+      animation: menu-animation 0.8s ease-out forwards; }
 
-/* line 119, ../sass/componets/burger-menu.scss */
 ul.menu {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-perspective: 1000;
-          perspective: 1000;
+  transform: translate3d(-50%, -50%, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
   color: white; }
-  /* line 127, ../sass/componets/burger-menu.scss */
   ul.menu .burger-menu-item {
     opacity: 0;
     text-align: center;
-    -webkit-transform: translate3d(0, 36px, 0);
-            transform: translate3d(0, 36px, 0); }
-    /* line 131, ../sass/componets/burger-menu.scss */
+    transform: translate3d(0, 36px, 0); }
     ul.menu .burger-menu-item:before {
       content: '';
       position: absolute;
@@ -217,9 +190,7 @@ ul.menu {
       height: 100%;
       width: 0;
       overflow: hidden;
-      -webkit-transition: width 0.14s ease-out;
       transition: width 0.14s ease-out; }
-    /* line 141, ../sass/componets/burger-menu.scss */
     ul.menu .burger-menu-item:after {
       opacity: 0;
       content: attr(data-text);
@@ -231,127 +202,59 @@ ul.menu {
       margin: auto;
       color: #000;
       overflow: hidden;
-      -webkit-transform: translate(-24px, 6px);
-              transform: translate(-24px, 6px);
-      -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
-      transition: opacity 0.1s ease-out, -webkit-transform 0.1s ease-out;
-      transition: transform 0.1s ease-out, opacity 0.1s ease-out;
-      transition: transform 0.1s ease-out, opacity 0.1s ease-out, -webkit-transform 0.1s ease-out; }
-    /* line 152, ../sass/componets/burger-menu.scss */
+      transform: translate(-24px, 6px);
+      transition: transform 0.1s ease-out, opacity 0.1s ease-out; }
     ul.menu .burger-menu-item:hover:before {
       left: 0;
       right: auto;
       width: 100%; }
-    /* line 157, ../sass/componets/burger-menu.scss */
     ul.menu .burger-menu-item:hover:after {
       opacity: 1;
       padding: 0 20px;
-      -webkit-transform: translate(0px, 6px);
-              transform: translate(0px, 6px);
-      -webkit-transition: opacity 0.2s 0.14s ease-out, -webkit-transform 0.2s 0.14s ease-out;
-      transition: opacity 0.2s 0.14s ease-out, -webkit-transform 0.2s 0.14s ease-out;
-      transition: transform 0.2s 0.14s ease-out, opacity 0.2s 0.14s ease-out;
-      transition: transform 0.2s 0.14s ease-out, opacity 0.2s 0.14s ease-out, -webkit-transform 0.2s 0.14s ease-out; }
-    /* line 165, ../sass/componets/burger-menu.scss */
+      transform: translate(0px, 6px);
+      transition: transform 0.2s 0.14s ease-out, opacity 0.2s 0.14s ease-out; }
     .open ul.menu .burger-menu-item {
       opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      -webkit-transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
-      transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-out;
-      transition: transform 0.2s ease-out, opacity 0.2s ease-out;
-      transition: transform 0.2s ease-out, opacity 0.2s ease-out, -webkit-transform 0.2s ease-out; }
-      /* line 171, ../sass/componets/burger-menu.scss */
+      transform: translate3d(0, 0, 0);
+      transition: transform 0.2s ease-out, opacity 0.2s ease-out; }
       .open ul.menu .burger-menu-item:nth-child(1) {
-        -webkit-transition-delay: 0.75s;
-                transition-delay: 0.75s; }
-      /* line 171, ../sass/componets/burger-menu.scss */
+        transition-delay: 0.75s; }
       .open ul.menu .burger-menu-item:nth-child(2) {
-        -webkit-transition-delay: 0.85s;
-                transition-delay: 0.85s; }
-      /* line 171, ../sass/componets/burger-menu.scss */
+        transition-delay: 0.85s; }
       .open ul.menu .burger-menu-item:nth-child(3) {
-        -webkit-transition-delay: 0.95s;
-                transition-delay: 0.95s; }
-      /* line 171, ../sass/componets/burger-menu.scss */
+        transition-delay: 0.95s; }
       .open ul.menu .burger-menu-item:nth-child(4) {
-        -webkit-transition-delay: 1.05s;
-                transition-delay: 1.05s; }
+        transition-delay: 1.05s; }
 
-/* line 177, ../sass/componets/burger-menu.scss */
 article {
   padding: 24px;
   max-width: 600px;
   margin: 60px auto;
-  -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out; }
-  /* line 182, ../sass/componets/burger-menu.scss */
   .open article {
-    -webkit-transform: scale(0.92);
-            transform: scale(0.92);
-    -webkit-transition: -webkit-transform 0.2s 0.41s ease-out;
-    transition: -webkit-transform 0.2s 0.41s ease-out;
-    transition: transform 0.2s 0.41s ease-out;
-    transition: transform 0.2s 0.41s ease-out, -webkit-transform 0.2s 0.41s ease-out; }
-
-@-webkit-keyframes menu-animation {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.04) translateY(300%);
-            transform: scale(0.04) translateY(300%); }
-  40% {
-    -webkit-transform: scale(0.04) translateY(0);
-            transform: scale(0.04) translateY(0);
-    -webkit-transition: ease-out;
-    transition: ease-out; }
-  40% {
-    -webkit-transform: scale(0.04) translateY(0);
-            transform: scale(0.04) translateY(0); }
-  60% {
-    opacity: 1;
-    -webkit-transform: scale(0.02) translateY(0px);
-            transform: scale(0.02) translateY(0px); }
-  61% {
-    -webkit-transform: scale(0.04);
-            transform: scale(0.04); }
-  99.9% {
-    height: 0;
-    padding-bottom: 100%;
-    border-radius: 100%; }
-  100% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    height: 100%;
-    padding-bottom: 0;
-    border-radius: 0; } }
+    transform: scale(0.92);
+    transition: transform 0.2s 0.41s ease-out; }
 
 @keyframes menu-animation {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0.04) translateY(300%);
-            transform: scale(0.04) translateY(300%); }
+    transform: scale(0.04) translateY(300%); }
   40% {
-    -webkit-transform: scale(0.04) translateY(0);
-            transform: scale(0.04) translateY(0);
-    -webkit-transition: ease-out;
+    transform: scale(0.04) translateY(0);
     transition: ease-out; }
   40% {
-    -webkit-transform: scale(0.04) translateY(0);
-            transform: scale(0.04) translateY(0); }
+    transform: scale(0.04) translateY(0); }
   60% {
     opacity: 1;
-    -webkit-transform: scale(0.02) translateY(0px);
-            transform: scale(0.02) translateY(0px); }
+    transform: scale(0.02) translateY(0px); }
   61% {
-    -webkit-transform: scale(0.04);
-            transform: scale(0.04); }
+    transform: scale(0.04); }
   99.9% {
     height: 0;
     padding-bottom: 100%;
     border-radius: 100%; }
   100% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     height: 100%;
     padding-bottom: 0;
     border-radius: 0; } }

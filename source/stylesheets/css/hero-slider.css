@@ -243,7 +243,7 @@ Hero Slider - by CodyHouse.co
   top: 0;
   /* this padding is used to align the text */
   padding-top: 100px;
-  text-align: center;
+  text-align: left;
   /* Force Hardware Acceleration */
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
@@ -450,6 +450,7 @@ Hero Slider - by CodyHouse.co
     transition: opacity 0.4s 0.4s, transform 0.5s 0.4s;
     transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, -webkit-transform 0.5s 0.4s;
   }
+  .cd-hero__content--full-width h1,
   .cd-hero__content--full-width h2,
   .cd-hero__content--full-width p,
   .cd-hero__content--full-width .cd-hero__btn {
@@ -457,6 +458,7 @@ Hero Slider - by CodyHouse.co
         -ms-transform: translateX(100px);
             transform: translateX(100px);
   }
+  .cd-hero__slide--move-left .cd-hero__content--full-width h1,
   .cd-hero__slide--move-left .cd-hero__content--full-width h2,
   .cd-hero__slide--move-left .cd-hero__content--full-width p,
   .cd-hero__slide--move-left .cd-hero__content--full-width .cd-hero__btn {
@@ -464,6 +466,7 @@ Hero Slider - by CodyHouse.co
         -ms-transform: translateX(-100px);
             transform: translateX(-100px);
   }
+  .cd-hero__slide--selected .cd-hero__content--full-width h1,
   .cd-hero__slide--selected .cd-hero__content--full-width h2,
   .cd-hero__slide--selected .cd-hero__content--full-width p,
   .cd-hero__slide--selected .cd-hero__content--full-width .cd-hero__btn {
@@ -472,16 +475,18 @@ Hero Slider - by CodyHouse.co
         -ms-transform: translateX(0);
             transform: translateX(0);
   }
+  .cd-hero__slide--is-moving .cd-hero__content--full-width h1,
   .cd-hero__slide--is-moving .cd-hero__content--full-width h2,
   .cd-hero__slide--is-moving .cd-hero__content--full-width p,
   .cd-hero__slide--is-moving .cd-hero__content--full-width .cd-hero__btn {
-    /* this is the slide moving outside the viewport 
+    /* this is the slide moving outside the viewport
     wait for the end of the transition on the li parent before set translate to 100px/-100px */
     -webkit-transition: -webkit-transform 0s 0.5s;
     transition: -webkit-transform 0s 0.5s;
     transition: transform 0s 0.5s;
     transition: transform 0s 0.5s, -webkit-transform 0s 0.5s;
   }
+  .cd-hero__slide--selected h1,
   .cd-hero__slide--selected h2 {
     -webkit-transition: -webkit-transform 0.5s 0.2s;
     transition: -webkit-transform 0.5s 0.2s;
