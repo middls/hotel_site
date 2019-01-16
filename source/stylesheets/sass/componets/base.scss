@@ -18,7 +18,22 @@ input {
 	background-color: transparent;
     padding: 12px 16px;
     font-size: 16px;
-    font-family: "Larsseit-Light",sans-serif;
     border: 0;
     color: #000;
+}
+@font-face {
+	font-family: 'SourceSansPro';
+	src: url('../fonts/SourceSansPro-Light.ttf');
+	// font-weight: normal;
+	// font-style: normal;
+}
+@font-face {
+	font-family: 'PrintClearly';
+	src: url('../fonts/PrintClearly_TT.ttf');
+	// font-weight: normal;
+	// font-style: normal;
+}
+
+p {
+	font-family:'PrintClearly_TT';
 }

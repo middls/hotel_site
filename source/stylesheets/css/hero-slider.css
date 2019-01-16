@@ -180,7 +180,10 @@ Hero Slider - by CodyHouse.co
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
 }
-
+.cd-hero__slide--selected {
+  opacity: 1;
+  background-color: #000;
+}
 .cd-hero__slide.cd-hero__slide--is-moving,
 .cd-hero__slide.cd-hero__slide--selected {
   /* the cd-hero__slide--is-moving class is assigned to the slide which is moving outside the viewport */
@@ -376,6 +379,7 @@ Hero Slider - by CodyHouse.co
     left: auto;
   }
   .cd-hero__content.cd-hero__content--img {
+    opacity: 0.75;
     display: block;
   }
   .cd-hero__content h2, .cd-hero__content p {
