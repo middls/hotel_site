@@ -94,8 +94,26 @@ body {
   background-color: #000;
   margin-right: 20px; }
 
+.heading__c::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  bottom: 22px;
+  width: 76px;
+  height: 1px;
+  background-color: #000;
+  margin-right: 20px; }
+
+.heading__c {
+  font-size: 40px; }
+
+.subheading--h3 {
+  font-size: 16px; }
+
 .heading__section {
-  text-align: left; }
+  text-align: left;
+  animation-name: opacity;
+  animation-duration: 4s; }
 
 .column__header {
   padding-left: 70px;
@@ -133,12 +151,22 @@ body {
 .flex-a-c {
   justify-content: flex-end; }
 
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 a {
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
+
+h3 {
+  color: #000; }
 
 .menu {
   list-style: none;
