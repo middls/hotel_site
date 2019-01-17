@@ -15,9 +15,7 @@
 .menu__header_vital
 {
     float: left;
-
 }
-
 .cd-header__nav a
 {
     font-size: 18px;
@@ -268,28 +266,25 @@
 .menu__footer--social li {
     margin: 0 10px;
 }
-.social-btn>a:hover i.fa-github{
+.social-btn > a:hover i.fa-github{
     color: #9f7be1;
 }
-.social-btn>a:hover i.fa-vk{
+.social-btn > a:hover i.fa-vk{
     color: #45668e;
 }
-.social-btn>a:hover i.fa-facebook-f{
+.social-btn > a:hover i.fa-facebook-f{
     color: #3b5998;
 }
-
-.social-btn>a:hover i.fa-instagram{
+.social-btn > a:hover i.fa-instagram{
     color: #c32aa3;
 }
-
-$blue: rgb(41,182,246);
 
 .checkbox-wrapper{
   display: inline-block;
   position: relative;
   top: 10px;
   transform: translateX(-50%) translateY(-50%);
-  
+
   input{
     cursor: pointer;
     height: 20px;
@@ -298,7 +293,7 @@ $blue: rgb(41,182,246);
     position: absolute;
     width: 20px;
     z-index: 2;
-    
+
     &:active{
       + .checkbox{
         &:before{
@@ -307,15 +302,15 @@ $blue: rgb(41,182,246);
         }
       }
     }
-    
+
     &:checked{
       + .checkbox{
-        border: 2px solid $blue;
-        
+        border: 2px solid #000;
+
         &:before{
           animation: pulse 1s cubic-bezier(0.15, 0.8, 0.5, 1);
         }
-        
+
         &:after{
           height: 20px;
           opacity: 1;
@@ -324,7 +319,6 @@ $blue: rgb(41,182,246);
       }
     }
   }
-  
   .checkbox{
     border: 2px solid black;
     border-radius: 2px;
@@ -332,7 +326,7 @@ $blue: rgb(41,182,246);
     position: relative;
     transition: all 0.5s;
     width: 16px;
-    
+
     &:before, &:after{
       content: '';
       left: 50%;
@@ -349,7 +343,7 @@ $blue: rgb(41,182,246);
       width: 5px;
       z-index: -1;
     }
-    
+
     &:after{
       background-color: #000;
       border-radius: 2px;
@@ -357,7 +351,6 @@ $blue: rgb(41,182,246);
       opacity: 0;
       width: 5px;
     }
-    
     i{
       color: white;
       height: 18px;

@@ -1,12 +1,10 @@
-
-
 $color-primary: #666;
 $color-secondary: #888;
 $color-light: #e0e0e0;
 $color-lightest: #efefef;
 $color-brand: #239bf6;
 
-
+//color social
 $color-facebook: #3b5998;
 $color-feedly: #2bb24c;
 $color-github: #333;
@@ -19,10 +17,19 @@ $color-rss: #f26522;
 $color-spotify: #2ebd59;
 $color-twitter: #A0A0A0;
 
+//var burger-menu
+$bp-small: 500px;
+$bp-arrow: 700px;
+$font-primary: 'Lusitana', sans-serif;
+$color: #98B296;
+$color-bg: #fcfcf4;
+$color-dark: darken($color, 10%);
+$color-lite: lighten($color, 10%);
 
+//border
 $border-light: solid 1px rgba(0, 0, 0, .05);
 
-
+//font-size
 $font-size-biggest: 2.8rem;
 $font-size-largest: 2.3rem;
 $font-size-large: 1.2rem;
@@ -37,7 +44,8 @@ $spacing-double: 2rem;
 $spacing-triple: 3rem;
 $spacing-big: 6rem;
 
-
+//media
 $desktop: 800px;
 $tablet: 600px;
 $mobile: 480px
+

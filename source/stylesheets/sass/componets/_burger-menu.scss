@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lusitana);
 
-$bp-small: 500px;
-$bp-arrow: 700px;
-$font-primary: 'Lusitana', sans-serif;
-$color: #98B296;
-$color-bg: #fcfcf4;
-$color-dark: darken($color, 10%);
-$color-lite: lighten($color, 10%);
 
 @mixin position-center {
   position: absolute;
